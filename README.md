@@ -1,2 +1,2 @@
 # terraform-aws-module-ec2
-Create by terraform module VPC
+Create by terraform module EC2

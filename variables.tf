@@ -1,8 +1,8 @@
-variable "account_id" {
-  description = "List of AWS account IDs"
-  type        = list()
-  default     = [""]
-}
+# variable "account_id" {
+#   description = "List of AWS account IDs"
+#   type        = list()
+#   default     = [""]
+# }
 
 variable "region" {
   description = "AWS Region"

@@ -1,7 +1,7 @@
-output "account_id" {
-  description = "AWS Account ID"
-  value = var.account_id
-}
+# output "account_id" {
+#   description = "AWS Account ID"
+#   value = var.account_id
+# }
 output "vpc_id" {
   description = "VPC ID"
   value = var.vpc_id

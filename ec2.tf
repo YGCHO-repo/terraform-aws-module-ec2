@@ -14,9 +14,9 @@ resource "aws_instance" "this" {
   }
 
   root_block_device {
-    volume_type = var.volnme_type
+    volume_type = var.volume_type
     volume_size = var.volume_size
-    tags = merge(var.tags, tomap({ Name = format("%s-%s-ebs", var.instance_name, var.volnme_type) }))
+    tags = merge(var.tags, tomap({ Name = format("%s-%s-ebs", var.instance_name, var.volume_type) }))
   }
 
   depends_on = [ aws_eip.this ]

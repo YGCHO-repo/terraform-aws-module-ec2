@@ -39,7 +39,7 @@ variable "volume_size" {
   type        = number
 }
 
-variable "volnme_type" {
+variable "volume_type" {
   description = "The type of volume (gp2, gp3, io2, standard)"
   type        = string
   default     = ""

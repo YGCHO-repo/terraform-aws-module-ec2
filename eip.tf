@@ -1,6 +1,6 @@
 resource "aws_eip" "this" {
   vpc  = true
-  tags = merge(var.tags, tomap({ Name = formet("%s-eip", var.instance_name) }))
+  tags = merge(var.tags, tomap({ Name = format("%s-eip", var.instance_name) }))
 }
 
 resource "aws_eip_association" "this" {

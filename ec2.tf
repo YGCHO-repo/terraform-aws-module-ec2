@@ -1,7 +1,7 @@
 resource "aws_network_interface" "this" {
   description     = "NIC eth0 for ${var.instance_name}"
   subnet_id       = var.subnet_id
-  security_groups = [aws_security_group.id]
+  security_groups = [aws_security_group.this.id]
 
   tags = merge(var.tags, tomap({ Name = format("%s-nic", var.instance_name) }))
 }

@@ -12,7 +12,7 @@ resource "aws_instance" "this" {
   key_name      = var.key_name
 
   network_interface {
-    network_interface_id = aws_network_interface.id
+    network_interface_id = aws_network_interface.this.id
     device_index         = 0
   }
 

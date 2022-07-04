@@ -36,7 +36,7 @@ resource "aws_eip_association" "this" {
   instance_id   = aws_instance.this.id
   allocation_id = aws_eip.this.id
 
-  depends_on = [aws_instance.this.id]
+  depends_on = [aws_instance.this]
 }
 
 resource "aws_ebs_encryption_by_default" "this" {
